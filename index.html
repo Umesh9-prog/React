@@ -9,14 +9,17 @@
   <body>
     <div id="root"></div>
 
-    <script
+
+    <!-- this way of importing react is not suggested as you have to change the version and you are making extra network calls 
+    import react through npm so that you have react in node_modules -->
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
+    ></script> -->
     <!-- <script>
         const heading =document.createElement("h1");
         heading.innerHTML="Hello from js";
@@ -34,7 +37,7 @@
 
     </script> -->
 
-    <script src="./App.js"></script>
+    <script type="module" src="./App.js"></script>
 
    
   </body>
